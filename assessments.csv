@@ -1,0 +1,40 @@
+assessment_id,assessment_name,url,description,remote_support,adaptive_support,duration,test_type
+1,Automata - Fix (New),https://www.shl.com/solutions/products/product-catalog/view/automata-fix-new/,Tests coding bug fixing,Yes,No,30,Technical
+2,Core Java (Entry Level) (New),https://www.shl.com/solutions/products/product-catalog/view/core-java-entry-level-new/,Tests entry-level Java programming skills,Yes,Yes,25,Technical
+3,Java 8 (New),https://www.shl.com/solutions/products/product-catalog/view/java-8-new/,Tests Java 8 programming proficiency,Yes,Yes,30,Technical
+4,Core Java (Advanced Level) (New),https://www.shl.com/solutions/products/product-catalog/view/core-java-advanced-level-new/,Tests advanced Java programming skills,Yes,Yes,35,Technical
+5,Agile Software Development,https://www.shl.com/solutions/products/product-catalog/view/agile-software-development/,Assesses knowledge of agile methodologies,Yes,No,30,Technical
+6,Technology Professional 8.0 Job Focused Assessment,https://www.shl.com/solutions/products/product-catalog/view/technology-professional-8-0-job-focused-assessment/,Evaluates tech job-specific competencies,Yes,Yes,40,Technical
+7,Computer Science (New),https://www.shl.com/solutions/products/product-catalog/view/computer-science-new/,Tests core computer science concepts,Yes,Yes,35,Technical
+8,Entry Level Sales 7.1 (International),https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/,Assesses entry-level sales skills,Yes,No,50,Behavioral
+9,Entry Level Sales Sift Out 7.1,https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/,Screens out unsuitable sales candidates,Yes,No,30,Behavioral
+10,Entry Level Sales Solution,https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/,Comprehensive sales skills assessment,Yes,No,55,Behavioral
+11,Sales Representative Solution,https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/,Evaluates sales representative competencies,Yes,No,50,Behavioral
+12,Sales Support Specialist Solution,https://www.shl.com/solutions/products/product-catalog/view/sales-support-specialist-solution/,Assesses sales support skills,Yes,No,45,Behavioral
+13,Technical Sales Associate Solution,https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/,Tests technical sales competencies,Yes,No,50,Behavioral
+14,SVAR - Spoken English (Indian Accent) (New),https://www.shl.com/solutions/products/product-catalog/view/svar-spoken-english-indian-accent-new/,Evaluates spoken English proficiency,Yes,No,20,Language
+15,Sales & Service Phone Solution,https://www.shl.com/solutions/products/product-catalog/view/sales-and-service-phone-solution/,Assesses phone-based sales/service skills,Yes,No,40,Behavioral
+16,Sales & Service Phone Simulation,https://www.shl.com/solutions/products/product-catalog/view/sales-and-service-phone-simulation/,Simulates phone-based sales scenarios,Yes,No,35,Behavioral
+17,English Comprehension (New),https://www.shl.com/solutions/products/product-catalog/view/english-comprehension-new/,Tests English reading comprehension,Yes,Yes,25,Cognitive
+18,Motivation Questionnaire MQM5,https://www.shl.com/solutions/products/product-catalog/view/motivation-questionnaire-mqm5/,Assesses workplace motivation,Yes,No,30,Behavioral
+19,Global Skills Assessment,https://www.shl.com/solutions/products/product-catalog/view/global-skills-assessment/,Evaluates global workplace skills,Yes,Yes,50,Behavioral
+20,Graduate 8.0 Job Focused Assessment,https://www.shl.com/solutions/products/product-catalog/view/graduate-8-0-job-focused-assessment-4228/,Assesses graduate-level competencies,Yes,Yes,45,Behavioral
+21,Drupal (New),https://www.shl.com/solutions/products/product-catalog/view/drupal-new/,Tests Drupal development skills,Yes,No,30,Technical
+22,Search Engine Optimization (New),https://www.shl.com/solutions/products/product-catalog/view/search-engine-optimization-new/,Assesses SEO knowledge,Yes,No,25,Technical
+23,Administrative Professional - Short Form,https://www.shl.com/solutions/products/product-catalog/view/administrative-professional-short-form/,Tests administrative skills,Yes,No,30,Behavioral
+24,General Entry Level - Data Entry 7.0 Solution,https://www.shl.com/solutions/products/product-catalog/view/general-entry-level-data-entry-7-0-solution/,Assesses data entry proficiency,Yes,No,20,Technical
+25,Automata Selenium,https://www.shl.com/solutions/products/product-catalog/view/automata-selenium/,Tests Selenium automation skills,Yes,No,30,Technical
+26,Automata Front End,https://www.shl.com/solutions/products/product-catalog/view/automata-front-end/,Tests front-end development skills,Yes,No,30,Technical
+27,JavaScript (New),https://www.shl.com/solutions/products/product-catalog/view/javascript-new/,Tests JavaScript programming,Yes,Yes,25,Technical
+28,HTML/CSS (New),https://www.shl.com/solutions/products/product-catalog/view/htmlcss-new/,Tests HTML and CSS skills,Yes,No,25,Technical
+29,HTML5 (New),https://www.shl.com/solutions/products/product-catalog/view/html5-new/,Tests HTML5 development,Yes,No,25,Technical
+30,CSS3 (New),https://www.shl.com/solutions/products/product-catalog/view/css3-new/,Tests CSS3 styling skills,Yes,No,25,Technical
+31,Selenium (New),https://www.shl.com/solutions/products/product-catalog/view/selenium-new/,Tests Selenium testing skills,Yes,No,30,Technical
+32,SQL Server (New),https://www.shl.com/solutions/products/product-catalog/view/sql-server-new/,Tests SQL Server database skills,Yes,Yes,30,Technical
+33,Automata - SQL (New),https://www.shl.com/solutions/products/product-catalog/view/automata-sql-new/,Tests SQL query skills,Yes,Yes,30,Technical
+34,Manual Testing (New),https://www.shl.com/solutions/products/product-catalog/view/manual-testing-new/,Assesses manual testing skills,Yes,No,30,Technical
+35,Verify - Numerical Ability,https://www.shl.com/solutions/products/product-catalog/view/verify-numerical-ability/,Tests numerical reasoning,Yes,Yes,25,Cognitive
+36,Financial Professional - Short Form,https://www.shl.com/solutions/products/product-catalog/view/financial-professional-short-form/,Assesses financial skills,Yes,No,30,Behavioral
+37,Bank Administrative Assistant - Short Form,https://www.shl.com/solutions/products/product-catalog/view/bank-administrative-assistant-short-form/,Tests banking admin skills,Yes,No,30,Behavioral
+38,Basic Computer Literacy (Windows 10) (New),https://www.shl.com/solutions/products/product-catalog/view/basic-computer-literacy-windows-10-new/,Tests basic computer skills,Yes,No,20,Technical
+39,Verify - Verbal Ability - Next Generation,https://www.shl.com/solutions/products/product-catalog/view/verify-verbal-ability-next-generation/,Tests verbal reasoning,Yes,Yes,20,Cognitive
