@@ -1,7 +1,6 @@
 import pandas as pd
 from rag import load_assessments, build_vector_store, recommend_assessments
 
-# Test dataset (Pages 4–10)
 test_data = [
     {
         "query": "I am hiring for Java developers who can also collaborate effectively with my business teams. Looking for an assessment(s) that can be completed in 40 minutes.",

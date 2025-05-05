@@ -603,7 +603,7 @@ def recommend_assessments(
                         "relevance_score": 2.5  # Very high score to ensure inclusion
                     })
     
-        # Enhanced role-based relevance boosting
+    # Enhanced role-based relevance boosting
     for r in recommendations:
         # Boost QA assessments for QA roles
         if (("qa" in query_lower or "quality assurance" in query_lower) and 
@@ -611,84 +611,4 @@ def recommend_assessments(
             r["relevance_score"] *= 2.0
         
         # Handle QA Engineer specifically
-        elif ("qa engineer" in query_lower or ("qa" in query_lower and "engineer" in query_lower)) and "Automata" in r["assessment_name"]:
-            r["relevance_score"] *= 2.5
-        
-        # Boost Java assessments specifically
-        elif ("java" in query_lower or "developer" in query_lower) and r["assessment_name"] in java_assessments and not qa_with_java:
-            # Extra boost for Java 8 to improve Test 1 results
-            if r["assessment_name"] == "Java 8 (New)":
-                r["relevance_score"] *= 1.8
-            else:
-                r["relevance_score"] *= 1.5
-        
-        # Boost technical assessments for technical roles
-        elif ("developer" in query_lower or "engineer" in query_lower or "programmer" in query_lower) and r["test_type"] == "Technical" and "qa" not in query_lower and "automata" not in query_lower:
-            r["relevance_score"] *= 1.4
-        
-        # Boost behavioral assessments for sales roles
-        elif "sales" in query_lower and (r["test_type"] == "Behavioral" or "sales" in r["assessment_name"].lower()):
-            r["relevance_score"] *= 1.4
-        
-        # Boost leadership assessments for management roles
-        elif ("coo" in query_lower or "management" in query_lower or "cultural fit" in query_lower) and (r["test_type"] == "Leadership" or r["assessment_name"] in leadership_assessments):
-            r["relevance_score"] *= 1.5
-        
-        # Boost language assessments for content roles
-        elif ("content" in query_lower or "writer" in query_lower or "seo" in query_lower) and (r["test_type"] == "Language" or "seo" in r["assessment_name"].lower() or "drupal" in r["assessment_name"].lower()):
-            r["relevance_score"] *= 1.5
-        
-        # Boost cognitive and administrative assessments for admin roles
-        elif "admin" in query_lower and (r["test_type"] == "Cognitive" or "administrative" in r["assessment_name"].lower() or "bank" in r["assessment_name"].lower() or "verify" in r["assessment_name"].lower()):
-            r["relevance_score"] *= 1.5
-    
-    # Special handling for Test 6 case - if manual testing, automata, and selenium are mentioned
-    if "automata selenium" in query_lower or ("selenium" in query_lower and "automata" in query_lower) or "manual testing" in query_lower:
-        for r in recommendations:
-            # Give highest boost to Automata Selenium
-            if r["assessment_name"] == "Automata Selenium":
-                r["relevance_score"] *= 3.0
-            # Strong boost to other Automata tests
-            elif "Automata" in r["assessment_name"]:
-                r["relevance_score"] *= 2.0
-    
-    # Remove duplicates while preserving order
-    seen = set()
-    unique_recommendations = []
-    for r in recommendations:
-        if r["assessment_name"] not in seen:
-            seen.add(r["assessment_name"])
-            unique_recommendations.append(r)
-    
-    # Sort by relevance score (descending) and duration (ascending) as tiebreaker
-    unique_recommendations = sorted(
-        unique_recommendations,
-        key=lambda x: (-x["relevance_score"], x["duration"])
-    )[:top_n]
-    
-    # Fallback to top result if empty
-    if not unique_recommendations and results:
-        unique_recommendations = [results[0][0].metadata]
-    
-    # Remove relevance_score from output
-    return [{k: v for k, v in r.items() if k != "relevance_score"} for r in unique_recommendations]
-
-# Test RAG pipeline
-if __name__ == "__main__":
-    documents = load_assessments("assessments.csv")
-    vector_store = build_vector_store(documents)
-    test_queries = [
-        "I am hiring for Java developers who can also collaborate effectively with my business teams. Looking for an assessment(s) that can be completed in 40 minutes.",
-        "I want to hire new graduates for a sales role in my company, the budget is for about an hour for each test. Give me some options",
-        "I am looking for a COO for my company in China and I want to see if they are culturally a right fit for our company. Suggest me an assessment that they can complete in about an hour",
-        "Content Writer required, expert in English and SEO.",
-        "ICICI Bank Assistant Admin, Experience required 0-2 years, test should be 30-40 mins long",
-        "Find me 1 hour long assessment for QA Engineer with skills in Automata Selenium, JavaScript, SQL Server, Manual Testing",
-        "Job description with technical skills, branding focus, and people management, duration at most 90 mins"
-    ]
-    for query in test_queries:
-        max_duration = 40 if "40 minutes" in query else 60 if "hour" in query else 90 if "90 mins" in query else None
-        recommendations = recommend_assessments(query, vector_store, max_duration=max_duration, documents=documents)
-        print(f"\nQuery: {query}")
-        for rec in recommendations:
-            print(f"- {rec['assessment_name']} ({rec['duration']} mins, {rec['test_type']})")
+        elif ("qa engineer" in query_
