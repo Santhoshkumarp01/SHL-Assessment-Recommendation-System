@@ -2,6 +2,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Optional
 from rag import load_assessments, build_vector_store, recommend_assessments
+import os
+
 
 app = FastAPI(title="SHL Assessment Recommendation API")
 
@@ -54,4 +56,5 @@ async def get_recommendations(input: QueryInput):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
