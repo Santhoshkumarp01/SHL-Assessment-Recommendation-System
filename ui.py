@@ -27,7 +27,7 @@ max_duration = st.number_input("Max duration (minutes)", min_value=10, max_value
 if st.button("Get Recommendations"):
     try:
         response = requests.post(
-            "https://shl-recommendation-backend.onrender.com/recommend",
+            "https://shl-assessment-recommendation-backend-4tnr.onrender.com/recommend",
             json={"query": query, "max_duration": max_duration}
         )
         data = response.json()
