@@ -1,14 +1,14 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Optional
-from rag import load_assessments, build_vector_store, recommend_assessments
+from backend.rag import load_assessments, build_vector_store, recommend_assessments
 import os
 
 
 app = FastAPI(title="SHL Assessment Recommendation API")
 
 # Initialize vector store (load once at startup)
-documents = load_assessments("assessments.csv")
+documents = load_assessments("backend/assessments.csv")
 vector_store = build_vector_store(documents)
 
 class QueryInput(BaseModel):

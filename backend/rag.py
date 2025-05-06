@@ -9,6 +9,7 @@ import re
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+
 # Custom Sentence Transformers Embeddings
 class SentenceTransformerEmbeddings(Embeddings):
     def __init__(self):
@@ -22,7 +23,7 @@ class SentenceTransformerEmbeddings(Embeddings):
         return self.model.encode([text], show_progress_bar=False)[0].tolist()
 
 # Load and prepare dataset
-def load_assessments(file_path: str = "assessments.csv") -> List[Document]:
+def load_assessments(file_path: str = "backend/assessments.csv") -> List[Document]:
     catalog = pd.read_csv(file_path)
     documents = [
         Document(

@@ -91,5 +91,5 @@ Ensured frontend-backend connectivity with CORS and correct URLs.
 
 Submission Details
 GitHub: https://github.com/Santhoshkumarp01/SHL-Assessment-Recommendation-System
-Document:
+Document: https://docs.google.com/document/d/1uY3VHQ7khT6-8ptkPODPtUFvRxXreis3/edit?usp=drive_link&rtpof=true&sd=true
 Author: SanthoshKumar P
