@@ -43,10 +43,10 @@ def load_assessments(file_path: str = "backend/assessments.csv") -> List[Documen
     ]
     return documents
 
-# Build vector store
-def build_vector_store(documents: List[Document]) -> FAISS:
+def build_vector_store(documents: List[Document], save_path: str = "vector_store.faiss") -> FAISS:
     embeddings = SentenceTransformerEmbeddings()
     vector_store = FAISS.from_documents(documents, embeddings)
+    vector_store.save_local(save_path)
     return vector_store
 
 def augment_query(query: str) -> str:
