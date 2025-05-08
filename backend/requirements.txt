@@ -3,11 +3,11 @@ uvicorn==0.29.0
 langchain==0.0.353
 langchain-community==0.0.20
 sentence-transformers==2.2.2
-faiss-cpu==1.7.4
+faiss-cpu==1.8.0
 scikit-learn==1.4.2
 huggingface-hub==0.23.0
 tokenizers==0.15.2
 pandas==2.2.2
 numpy==1.26.4
 torch==2.3.0
-pydantic==1.10.13
+pydantic==1.10.22

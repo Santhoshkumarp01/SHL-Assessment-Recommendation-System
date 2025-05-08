@@ -43,11 +43,7 @@ def load_assessments(file_path: str = "assessments.csv") -> List[Document]:
     ]
     return documents
 
-def build_vector_store(documents: List[Document], save_path: str = "vector_store.faiss") -> FAISS:
-    embeddings = SentenceTransformerEmbeddings()
-    vector_store = FAISS.from_documents(documents, embeddings)
-    vector_store.save_local(save_path)
-    return vector_store
+
 
 def augment_query(query: str) -> str:
     query_lower = query.lower()

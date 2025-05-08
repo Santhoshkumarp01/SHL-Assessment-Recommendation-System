@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Optional
-from rag import SentenceTransformerEmbeddings, load_assessments, build_vector_store, recommend_assessments
+from rag import SentenceTransformerEmbeddings, load_assessments, recommend_assessments
 from langchain_community.vectorstores import FAISS
 import os
 
@@ -10,7 +10,7 @@ app = FastAPI(title="SHL Assessment Recommendation API")
 
 # Initialize vector store (load once at startup)
 documents = load_assessments("assessments.csv")
-vector_store = FAISS.load_local("vector_store.faiss", embeddings=SentenceTransformerEmbeddings(), allow_dangerous_deserialization=True)
+
 class QueryInput(BaseModel):
     query: str
     max_duration: Optional[int] = None
