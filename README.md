@@ -56,10 +56,10 @@ Outputs: Test case metrics (Recall@3, AP@3).
 
 Deployment
 Frontend: Deployed on Render (free tier).
-URL: https://shl-assessment-recommendation-system-qx2f.onrender.com
+URL: https://shl-assessment-recommendation-system-1-yzvw.onrender.com
 Command: streamlit run ui.py --server.port $PORT
 Backend: Deployed on Render (free tier).
-URL: https://shl-assessment-recommendation-backend-4tnr.onrender.com
+URL: https://shl-assessment-recommendation-system-84o7.onrender.com
 Command: uvicorn main:app --host 0.0.0.0 --port $PORT
 Note: Render’s free tier may have ~30–60 second spin-up delays.
 
@@ -91,5 +91,5 @@ Ensured frontend-backend connectivity with CORS and correct URLs.
 
 Submission Details
 GitHub: https://github.com/Santhoshkumarp01/SHL-Assessment-Recommendation-System
-Document: https://docs.google.com/document/d/1uY3VHQ7khT6-8ptkPODPtUFvRxXreis3/edit?usp=drive_link&rtpof=true&sd=true
+Document: 
 Author: SanthoshKumar P
