@@ -55,7 +55,7 @@ jobs:
           name: python-app
 
       - name: Unzip artifact for deployment
-        run: unzip release.zip
+        run: unzip release.zip -d ./app
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -64,3 +64,4 @@ jobs:
           app-name: 'shl-recommendation-backend'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B014D02C1216456EA104AC80E3D62742 }}
+          package: ./app
